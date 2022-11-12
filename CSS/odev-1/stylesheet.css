@@ -1,0 +1,180 @@
+
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 40px;
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #fff;
+    color: #444;
+  }
+  
+
+  h1 ,p {
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+  
+  /* no grid support? */
+  .sidebar {
+    float: left;
+    width: 19.1489%;
+  }
+  
+ 
+  
+  
+  /* make a grid */
+  .wrapper {
+    max-width: 2024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5px;
+  }
+  
+  .wrapper > * {
+    background-color:white;
+    color: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    /* needed for the floated layout*/
+    margin-bottom: 10px;
+  }
+  
+  .header, .footer {
+    grid-column: 1 / -1;
+    /* needed for the floated layout */
+    clear: both;
+  }
+  
+  
+  /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+  @supports (display: grid) {
+    .wrapper > * {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+
+.header{
+  font-size: 64px;
+  color: crimson;
+  text-align: center;
+}
+
+.footer{
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-style:normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .middle{
+    padding: center;
+}
+
+
+
+
+
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: crimson;
+}
+.figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  
+}
+
+.figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+.content {
+  float: right;
+  width: 79.7872%;
+}
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+/* Bottom right text
+.text-block {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  color: red;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+.container .transparent {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after{
+  content: "";
+  clear:both;
+  display: table;
+}
+
+
+
+.adress{
+  font-size: 21px;
+  color: crimson;
+  text-align: center;
+  
+  
+}
+
+.text-align {
+  color: black;
+  width: 1500px;
+  text-align: justify;
+}

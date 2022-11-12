@@ -1,0 +1,19 @@
+h1 { 
+    color: purple; 
+    font-size: 64px;
+    text-align: center;
+    background-color: grey;
+  }
+/* açıklama kısmı oluşturmak için kısayol (ctrl+ö)*/
+/* deneme yapmalısın  */
+body {background-image: url( https://i.sozcucdn.com/wp-content/uploads/2022/11/08/iecrop/resim3_21717528_16_9_1667897777.jpg?w=776&h=436&mode=crop);
+
+}
+p{
+
+  color: yellow;
+  font-size: 1em;
+  text-align: center;
+  background-color:lightslategray ;
+  font-family: 'Times New Roman', Times, serif
+}
