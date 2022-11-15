@@ -1,24 +1,24 @@
 
 
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: border-box;
   }
   
-  body {
+ body {
     margin: 40px;
     font-family: 'Open Sans', 'sans-serif';
     background-color: #fff;
     color: #444;
-  }
+   }
   
 
-  h1 ,p {
+h1 ,p {
     margin: 0 0 1em 0;
     text-align: center;
   }
   
   /* no grid support? */
-  .sidebar {
+.sidebar {
     float: left;
     width: 19.1489%;
   }
@@ -27,7 +27,7 @@
   
   
   /* make a grid */
-  .wrapper {
+.wrapper {
     max-width: 2024px;
     margin: 0 auto;
     display: grid;
@@ -35,7 +35,7 @@
     grid-gap: 5px;
   }
   
-  .wrapper > * {
+.wrapper > * {
     background-color:white;
     color: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@
     margin-bottom: 10px;
   }
   
-  .header, .footer {
+.header, .footer {
     grid-column: 1 / -1;
     /* needed for the floated layout */
     clear: both;
@@ -53,8 +53,8 @@
   
   
   /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-  @supports (display: grid) {
-    .wrapper > * {
+@supports (display: grid) {
+  .wrapper > * {
       width: auto;
       margin: 0;
     }
